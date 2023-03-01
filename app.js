@@ -13,7 +13,7 @@ window.addEventListener("load", ()=>{
 
             const proxy = "https://cors-anywhere.herokuapp.com/"
             const api = `${proxy}http://api.weatherapi.com/v1/current.json?key=1c90130abf8341a1b1d205819232802&q=${lat},${long}`
-            console.log(api)
+            //console.log(api)
             
             
             fetch(api)
