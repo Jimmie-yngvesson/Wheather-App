@@ -1,4 +1,4 @@
-*{
+/*{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -27,6 +27,11 @@ body{
     align-items: center;
 
 }
+#currentTime
+{
+    display: flex;
+    font-size: 16px;
+}
 .temperature{
     flex-direction: column;
 }
@@ -41,4 +46,83 @@ body{
 }
 .degree-section h2{
     font-size: 40px;
+}*/
+/* För mobila enheter */
+@media only screen and (max-width: 767px) {
+    body {
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    }
+body {
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    background-image: url("images/bildett.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    
+  }
+  
+  /* Stilar för stad och ikon */
+  .citylocation {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .location-timezone {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+  }
+  
+
+  /* Stilar för temperatur */
+  .temperature {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .temperture-degree {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
+  .temperture-description {
+    font-size: 1.5rem;
+  }
+  
+  /* Stilar för tid */
+  .time {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  #currentTime {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-style: italic;
+  }
+  
+  /* Stilar för input */
+  .inputCity {
+    margin-top: 2rem;
+  }
+  input[type="text"] {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+  }
+  #locationInput {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #e8ebec;
+    color: #030303;
 }

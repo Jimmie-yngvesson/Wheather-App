@@ -8,9 +8,9 @@
     <title>Wheather app</title>
 </head>
 <body>
-    <div class="location">
-        <h1 class="location-timezone">Tids zon</h1>
-        <p>Ikon..</p>
+    <div class="citylocation">
+        <h1 class="location-timezone">Tids zon</h1>      
+        <p id="icon">Ikon..</p>
     </div>
     <div class="temperature">
         <div class="degree-section">
@@ -18,8 +18,14 @@
             </h2> 
         </div>
         <div class="temperture-description">Its very cold</div>
-        <div class="temperture-description">Its very cold</div>
-        <div class="temperture-description">Its very cold</div>
+    <div class="time"> 
+        <h2 id="currentTime">Lokal tid</h2> 
+    </div>
+    <div class="inputCity">
+        <input type="text" id="locationInput" value="Ange stad"/>
+    </div>
+   
+        
     </div>
     <script src="app.js"></script>
     <script src="skycons.js"></script>
